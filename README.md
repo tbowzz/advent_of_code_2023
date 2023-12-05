@@ -4,3 +4,8 @@
 ```
 ./generate_day.sh 01
 ```
+
+###To run
+```
+ruby day_01.rb
+```
