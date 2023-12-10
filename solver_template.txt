@@ -1,10 +1,6 @@
 class DayXX
   def self.run(test: false)
-    if test
-      file = 'day_XX_test_input.txt'
-    else
-      file = 'day_XX_input.txt'
-    end
+    file = "day_XX_#{test ? 'test_' : ''}input.txt"
     self.new.run(file: file)
   end
 
@@ -13,8 +9,6 @@ class DayXX
     data = text.each_line.map { |line| line.strip }
 
     puts "Part 1: #{part_one(data)}"
-
-
     puts "Part 2: #{part_two(data)}"
   end
 
